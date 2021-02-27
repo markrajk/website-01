@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Feedback - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="../../public/img/team-feedback-logo.png" alt="Team feedback logo" class="nav-logo-img">
+                <h1 class="nav-logo-name">Team Feedback</h1>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <button class="nav-list-item-link">Product <i class="fas fa-chevron-down"></i></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="nav-list-item-link">Enterprice</button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="nav-list-item-link">Documentation <i class="fas fa-chevron-down"></i></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="nav-list-item-link">Pricing</button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="nav-list-item-link">Demo</button>
+                </li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="button button-link">Login</button>
+                <button class="button button-green small">Get Started <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero container">
+            <div class="hero-banner">
+                <p class="hero-banner-text">
+                    Team Feedback works great in remote work too. <button>Click here</button> to learn more.
+                </p>
+                <i class="fas fa-times"></i>
+            </div>
+            <h2 class="hero-title">The great new tool to develop your teams</h2>
+            <p class="hero-text">
+                In most teams and companies the amount of given feedback is very poor.<br>
+                That’s why we developed Team Feedback. The tool to make feedback simple routine.
+            </p>
+            <button class="button button-green large">Get started for free</button>
+            <p class="hero-caption">Basic features free of charge for teams up to 50 people</p>
+        </section>
+
+        <section class="feature container left feature-01">
+            <div class="feature-media">
+                <div class="feature-media-circle"></div>
+                <div class="feature-media-phone phone-01">
+                    <img src="../../public/img/feature-img-placeholder.png" alt="Placeholder"
+                        class="feature-media-phone-content">
+                    <img src="../../public/img/feature-phone-frame.png" alt="Placeholder"
+                        class="feature-media-phone-frame">
+                </div>
+
+                <div class="feature-media-phone phone-02">
+                    <img src="../../public/img/feature-img-placeholder.png" alt="Placeholder"
+                        class="feature-media-phone-content">
+                    <img src="../../public/img/feature-phone-frame.png" alt="Placeholder"
+                        class="feature-media-phone-frame">
+                </div>
+            </div>
+            <div class="feature-main">
+                <p class="feature-main-subtitle">Getting started</p>
+                <h3 class="feature-main-title">The new simple way to give feedback</h3>
+                <p class="feature-main-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+                <button class="feature-main-link">Click here to learn more</button>
+            </div>
+        </section>
+
+        <section class="feature container right feature-02">
+            <div class="feature-media">
+                <div class="feature-media-circle"></div>
+                <div class="feature-media-phone phone-01">
+                    <img src="../../public/img/feature-img-placeholder.png" alt="Placeholder"
+                        class="feature-media-phone-content">
+                    <img src="../../public/img/feature-phone-frame.png" alt="Placeholder"
+                        class="feature-media-phone-frame">
+                </div>
+
+                <div class="feature-media-phone phone-02">
+                    <img src="../../public/img/feature-img-placeholder.png" alt="Placeholder"
+                        class="feature-media-phone-content">
+                    <img src="../../public/img/feature-phone-frame.png" alt="Placeholder"
+                        class="feature-media-phone-frame">
+                </div>
+            </div>
+            <div class="feature-main">
+                <p class="feature-main-subtitle">Getting started</p>
+                <h3 class="feature-main-title">Create the right feedback routines for your team</h3>
+                <p class="feature-main-text">
+                    Team leaders define what kinds of feedback is collected in their teams and how often. Team members
+                    get regularly a simple todo list.
+                </p>
+                <p class="feature-main-text">
+                    For example giving feedback to five colleagues
+                    takes just a couple of minutes.
+                </p>
+                <button class="feature-main-link">Click here to learn more</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="../../public/js/main.js"></script>
+
+    <script>
+        const featureMediaEls = document.querySelectorAll('.feature-media');
+
+        window.addEventListener('resize', function () {
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+            featureMediaEls.forEach(e => {
+                e.style.fontSize = `${vw / 1440}em`;
+            })
+        })
+
+    </script>
+</body>
+
+</html>
