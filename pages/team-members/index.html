@@ -365,68 +365,6 @@
 
     <script src="../../public/js/main.js"></script>
 
-    <!-- <script>
-        const featureMediaEls = document.querySelectorAll('.feature-media, .showcase-media');
-
-        function scaleFeatureMedia() {
-            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-            let scale = vw / 1440;
-
-            scale >= 1 && (scale = 1)
-
-            featureMediaEls.forEach(e => {
-                e.style.fontSize = `${scale}em`;
-            })
-        }
-
-        window.addEventListener('resize', function () {
-            scaleFeatureMedia()
-        })
-
-        scaleFeatureMedia()
-
-    </script> -->
-
-    <!-- <script>
-        function positionArrow(transition) {
-            const activeShowcaseLink = document.querySelector('.showcase-main-header-nav-item.active');
-            const activeShowcaseLine = document.querySelector('.showcase-main-header-nav-line');
-
-            const viewportOffset = activeShowcaseLink.getBoundingClientRect();
-            const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-            const left = viewportOffset.left / rem;
-            const width = activeShowcaseLink.offsetWidth / rem;
-            const leftOffset = left - (width * 1.2 - width) / 2;
-
-            activeShowcaseLine.style.left = `${leftOffset}em`;
-            activeShowcaseLine.style.width = `${width * 1.2}em`;
-
-            if (!transition) {
-                activeShowcaseLine.style.transition = 'none';
-            } else {
-                activeShowcaseLine.style.transition = 'left .3s cubic-bezier(.17,.67,.39,.89), width .3s cubic-bezier(.17,.67,.39,.89)';
-            }
-        }
-
-        const showcaseLinks = document.querySelectorAll('.showcase-main-header-nav-item');
-
-        showcaseLinks.forEach(e => {
-            e.addEventListener('click', function (e) {
-                showcaseLinks.forEach(x => {
-                    x.classList.remove('active');
-                })
-                e.currentTarget.classList.add('active');
-                positionArrow(true);
-            })
-        })
-
-        window.addEventListener('resize', function () {
-            positionArrow(false);
-        })
-
-        positionArrow(true);
-    </script> -->
-
     <script>
         const accordionTriggers = document.querySelectorAll('.custom-accordion-trigger');
 
