@@ -259,100 +259,6 @@ textarea {
 .main {
   padding-top: 13.8em; }
 
-.hero {
-  position: relative;
-  padding-bottom: 4.5em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  text-align: center; }
-  .hero-banner {
-    padding: 0 2.57em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    position: fixed;
-    top: 7.2em;
-    left: 0;
-    width: 100%;
-    height: 5.8em;
-    background-color: #e3f7eb;
-    z-index: 1000; }
-    .hero-banner-text {
-      font-size: 1.4em;
-      font-weight: 500;
-      line-height: 3.71;
-      letter-spacing: normal;
-      color: var(--green-dark); }
-      .hero-banner-text button, .hero-banner-text span, .hero-banner-text a {
-        color: #006fd4;
-        cursor: pointer; }
-        .hero-banner-text button:hover, .hero-banner-text span:hover, .hero-banner-text a:hover {
-          text-decoration: underline; }
-    .hero-banner i {
-      position: absolute;
-      top: 50%;
-      right: 2.57rem;
-      transform: translate(0, -50%);
-      font-size: 1.2em;
-      color: var(--green-dark);
-      cursor: pointer; }
-  .hero-title {
-    font-size: 4.2em;
-    font-weight: 700;
-    line-height: 1.31;
-    letter-spacing: 0.11px;
-    color: var(--black);
-    margin-bottom: 0.7619047619em; }
-  .hero-text {
-    max-width: 40.125em;
-    font-size: 1.6em;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: 0.04px;
-    color: var(--black);
-    margin-bottom: 2em; }
-  .hero .button-green {
-    margin-bottom: 1.7333333333em;
-    padding: 0 1.8666666667em;
-    height: 3.3333333333em; }
-  .hero-caption {
-    font-size: 1.2em;
-    font-weight: 500;
-    line-height: 2.17;
-    letter-spacing: 0.09px;
-    color: var(--text-body-medium); }
-
 .feature {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -1118,6 +1024,99 @@ textarea {
         .custom-accordion-card-body-text:not(:last-of-type) {
           margin-bottom: 1.4666666667em; }
 
+#home .hero {
+  position: relative;
+  padding-bottom: 4.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  text-align: center; }
+  #home .hero-banner {
+    padding: 0 2.57em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    position: fixed;
+    top: 7.2em;
+    left: 0;
+    width: 100%;
+    height: 5.8em;
+    background-color: #e3f7eb;
+    z-index: 1000; }
+    #home .hero-banner-text {
+      font-size: 1.4em;
+      font-weight: 500;
+      line-height: 3.71;
+      letter-spacing: normal;
+      color: var(--green-dark); }
+      #home .hero-banner-text button, #home .hero-banner-text span, #home .hero-banner-text a {
+        color: #006fd4;
+        cursor: pointer; }
+        #home .hero-banner-text button:hover, #home .hero-banner-text span:hover, #home .hero-banner-text a:hover {
+          text-decoration: underline; }
+    #home .hero-banner i {
+      position: absolute;
+      top: 50%;
+      right: 2.57rem;
+      transform: translate(0, -50%);
+      font-size: 1.2em;
+      color: var(--green-dark);
+      cursor: pointer; }
+  #home .hero-title {
+    font-size: 4.2em;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0.11px;
+    color: var(--black);
+    margin-bottom: 0.7619047619em; }
+  #home .hero-text {
+    max-width: 40.125em;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04px;
+    color: var(--black);
+    margin-bottom: 2em; }
+  #home .hero .button-green {
+    margin-bottom: 1.7333333333em;
+    padding: 0 1.8666666667em;
+    height: 3.3333333333em; }
+  #home .hero-caption {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2.17;
+    letter-spacing: 0.09px;
+    color: var(--text-body-medium); }
 #home .feature.feature-01 .feature-main-title {
   max-width: 10.2941176471em; }
 #home .feature.feature-01 .feature-main-text {
@@ -1184,3 +1183,156 @@ textarea {
     background-image: none; }
     #team-members .dashboard-text {
       max-width: 43.3548387097em; }
+
+#team-leaders .hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+  #team-leaders .hero-main {
+    margin-right: 13.4em;
+    max-width: 44em;
+    width: 100%; }
+    #team-leaders .hero-main-subtitle {
+      margin-bottom: 0.875em;
+      font-size: 1.6em;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #2e332f; }
+    #team-leaders .hero-main-title {
+      margin-bottom: 1em;
+      font-size: 4.2em;
+      font-weight: 700;
+      letter-spacing: 0.11px;
+      color: #000000; }
+    #team-leaders .hero-main-text {
+      margin-bottom: 2.5882352941em;
+      font-size: 1.7em;
+      font-weight: 400;
+      letter-spacing: 0.13px;
+      color: #000000; }
+    #team-leaders .hero-main-buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start; }
+      #team-leaders .hero-main-buttons .button {
+        height: 3.3333333333em;
+        width: 10.3333333333em; }
+        #team-leaders .hero-main-buttons .button:not(:last-of-type) {
+          margin-right: 1.0666666667em; }
+  #team-leaders .hero-img {
+    max-width: 64.6em;
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
+#team-leaders .showcase {
+  background: transparent;
+  background-image: none; }
+  #team-leaders .showcase-header-title {
+    width: 100%;
+    max-width: 13.9444444444em; }
+  #team-leaders .showcase-header-text {
+    width: 100%;
+    max-width: 45.8709677419em; }
+  #team-leaders .showcase-main-img {
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 76em;
+    height: auto;
+    object-fit: cover; }
+  #team-leaders .showcase-main-header {
+    margin-bottom: 3em; }
+  #team-leaders .showcase-main .showcase-header-text {
+    width: 100%;
+    max-width: 37.8064516129em;
+    margin: 0 auto; }
+#team-leaders .dashboard {
+  padding-bottom: 8em; }
+  #team-leaders .dashboard.dashboard-01 .dashboard-title {
+    width: 100%;
+    max-width: 52.8rem; }
+  #team-leaders .dashboard.dashboard-02 .dashboard-title {
+    width: 100%;
+    max-width: 46rem; }
+  #team-leaders .dashboard.dashboard-03 .dashboard-title {
+    width: 100%;
+    max-width: 61rem; }
+  #team-leaders .dashboard-info {
+    max-width: 124.1em;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    #team-leaders .dashboard-info-left {
+      width: 100%;
+      max-width: 54.8em; }
+      #team-leaders .dashboard-info-left-text {
+        width: 100%;
+        font-size: 1.55em;
+        font-weight: 400;
+        line-height: 1.81;
+        letter-spacing: normal;
+        color: #2d353c;
+        text-align: left; }
+        #team-leaders .dashboard-info-left-text:not(:last-of-type) {
+          margin-bottom: 2rem; }
+    #team-leaders .dashboard-info-right-item {
+      width: 100%;
+      max-width: 22em; }
+      #team-leaders .dashboard-info-right-item:not(:last-of-type) {
+        margin-bottom: 4.8em; }
+      #team-leaders .dashboard-info-right-item-top {
+        text-align: left;
+        margin-bottom: 1.2em; }
+        #team-leaders .dashboard-info-right-item-top p {
+          font-size: 2.6em;
+          font-weight: 700;
+          letter-spacing: normal;
+          color: var(--text-headers); }
+        #team-leaders .dashboard-info-right-item-top img {
+          width: 11.3em; }
+        #team-leaders .dashboard-info-right-item-top i {
+          margin-right: 2.6rem;
+          font-size: 2.2em;
+          color: #323338; }
+      #team-leaders .dashboard-info-right-item-text {
+        font-size: 1.35em;
+        font-weight: 400;
+        letter-spacing: 0.07px;
+        color: #323338;
+        text-align: left; }
