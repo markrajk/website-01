@@ -623,6 +623,22 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(desktop-xl) {
+    font-size: 60%;
+  }
+  @include respond(desktop-lg) {
+    font-size: 57.5%;
+  }
+  @include respond(desktop-md) {
+    font-size: 55%;
+  }
+  @include respond(desktop-sm) {
+    font-size: 52.5%;
+  }
+  @include respond(desktop-xsm) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -1714,7 +1730,7 @@ textarea {
     @include justify-content(center);
 
     &-main {
-      margin-right: 13.4em;
+      margin-right: 15.4em;
       max-width: 44em;
       width: 100%;
 
@@ -1728,10 +1744,7 @@ textarea {
 
       &-title {
         margin-bottom: emcalc(4.2, 4.2);
-        font-size: 4.2em;
-        font-weight: 700;
-        letter-spacing: 0.11px;
-        color: #000000;
+        @include h1();
       }
 
       &-text {
@@ -1748,8 +1761,9 @@ textarea {
         @include justify-content(flex-start);
 
         & .button {
-          height: emcalc(5, 1.5);
-          width: emcalc(15.5, 1.5);
+          height: emcalc(5, 1.45);
+          width: emcalc(15.5, 1.45);
+          font-size: 1.45em;
 
           &:not(:last-of-type) {
             margin-right: emcalc(1.6, 1.5);
@@ -1771,14 +1785,24 @@ textarea {
     background-image: none;
 
     &-header {
+      &-subtitle {
+        margin-bottom: emcalc(1.2, 1.6);
+        font-size: 1.6em;
+        font-weight: 600;
+      }
+
       &-title {
+        margin-bottom: emcalc(3.2, 4);
         width: 100%;
-        max-width: emcalc(50.2, 3.6);
+        max-width: emcalc(50.2, 4);
+        @include h2();
       }
 
       &-text {
+        margin-bottom: emcalc(3.8, 1.6);
         width: 100%;
-        max-width: emcalc(71.1, 1.55);
+        max-width: emcalc(71.1, 1.6);
+        @include body-large();
       }
     }
 
@@ -1791,20 +1815,36 @@ textarea {
         object-fit: cover;
       }
 
+      &-media {
+        margin: 0 auto;
+        margin-bottom: 4em;
+        width: 100%;
+        max-width: 76em;
+
+        & video,
+        & img {
+          width: 100%;
+          border-radius: 20px;
+          box-shadow: 0 6px 12px 0 rgba(178, 178, 178, 0.24);
+          border: solid 1px #e8e8e8;
+        }
+      }
+
       &-header {
         margin-bottom: 3em;
       }
 
       & .showcase-header-text {
         width: 100%;
-        max-width: emcalc(58.6, 1.55);
+        max-width: emcalc(58.6, 1.6);
         margin: 0 auto;
       }
     }
   }
 
   & .dashboard {
-    padding-bottom: 8em;
+    padding-top: 6em;
+    padding-bottom: 9em;
     // max-width: 124.1em;
 
     &.dashboard-01 {
@@ -1828,6 +1868,22 @@ textarea {
       }
     }
 
+    &-subtitle {
+      margin-bottom: emcalc(1.2, 1.6);
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+
+    &-title {
+      margin-bottom: emcalc(3.2, 4);
+      @include h2();
+    }
+
+    &-img {
+      margin-bottom: 6em;
+      max-width: 76em;
+    }
+
     &-info {
       max-width: 124.1em;
       width: 100%;
@@ -1841,7 +1897,7 @@ textarea {
 
         &-text {
           width: 100%;
-          @include body-medium();
+          @include body-large();
           text-align: left;
 
           &:not(:last-of-type) {
